@@ -1,6 +1,6 @@
 {
   "name": "ng-core-addons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "your ng addon",
   "main": "index.js",
   "scripts": {
