@@ -4,7 +4,7 @@
   angularTemplates = require("broccoli-angular-templates-cache"),
   path = require("path"),
   mergeTrees = require('broccoli-merge-trees'),
-  dist_dir = path.join(__dirname,'../../anotherApp'),
+  dist_dir = path.join(__dirname,'../../'),
   rework = require('broccoli-rework'),
   imprt = require('rework-import'),
   ngApp = require(dist_dir+"/ngconfig.json");
