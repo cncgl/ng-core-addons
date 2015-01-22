@@ -11,12 +11,11 @@
     "bluebird": "^2.6.2",
     "broccoli-angular-templates-cache": "^1.0.0",
     "broccoli-merge-trees": "^0.2.1",
-    "broccoli-rework": "^1.0.0",
     "broccoli-static-compiler": "^0.2.1",
     "broccoli-webpack": "^0.1.1",
     "lodash": "^2.4.1",
     "ng-runner": "^0.0.1",
-    "rework-import": "^2.0.0"
+    "broccoli-rework-single": "git+https://github.com/ngCli/broccoli-rework-single.git"
   },
   "devDependencies": {},
   "author": "amanvirk <virk.officials@gmail.com>",
