@@ -1,6 +1,6 @@
 {
   "name": "ng-core-addons",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "your ng addon",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,13 @@
     "rework-import": "^2.0.0"
   },
   "devDependencies": {},
-  "author": "amanvirk <virk.officials@gmail.com>"
+  "author": "amanvirk <virk.officials@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngCli/ng-core-addons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ngCli/ng-core-addons/issues"
+  },
+  "homepage": "https://github.com/ngCli/ng-core-addons"
 }
