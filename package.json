@@ -1,23 +1,27 @@
 {
   "name": "ng-core-addons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "your ng addon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "node ./node_modules/fs-concatenate -i content -o snippets.js"
   },
   "license": "ISC",
   "dependencies": {
     "bluebird": "^2.6.2",
-    "broccoli-angular-templates-cache": "^1.0.0",
+    "broccoli-angular-templates-cache": "^1.0.2",
     "broccoli-merge-trees": "^0.2.1",
-    "broccoli-static-compiler": "^0.2.1",
+    "broccoli-rework-single": "^1.0.1",
     "broccoli-webpack": "^0.1.1",
+    "change-case": "^2.2.0",
+    "fs-concatenate": "git+https://github.com/thetutlage/fs-concatenate.git",
+    "lineup": "0.0.7",
     "lodash": "^2.4.1",
-    "ng-runner": "^0.0.1",
-    "broccoli-rework-single": "git+https://github.com/ngCli/broccoli-rework-single.git"
+    "mkdirp": "^0.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "ng-runner": "^0.0.1"
+  },
   "author": "amanvirk <virk.officials@gmail.com>",
   "repository": {
     "type": "git",
