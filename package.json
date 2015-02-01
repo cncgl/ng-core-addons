@@ -1,7 +1,7 @@
 {
   "name": "ng-core-addons",
-  "version": "0.0.3",
-  "description": "your ng addon",
+  "version": "0.0.4",
+  "description": "core addon for ngcli , contains generator and all required build tasks.",
   "main": "index.js",
   "scripts": {
     "postinstall": "node ./node_modules/fs-concatenate -i content -o snippets.js"
