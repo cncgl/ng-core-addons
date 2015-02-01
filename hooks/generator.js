@@ -27,6 +27,8 @@
     initializer: ''
   };
 
+  var app_path = path.join(__dirname,'../../../');
+
   module.exports = {
 
     init: function(ngconfig,args){
@@ -103,7 +105,7 @@
         var entity_folder = entities[entity];
 
         // Grabbing full path to entity one is going to create
-        var entity_app_path = path.join(process.cwd(),'app/'+entity_folder+'/'+file);
+        var entity_app_path = path.join(app_path,'app/'+entity_folder+'/'+file);
 
         // check if same entity exists
         var isThere = fs.existsSync(entity_app_path);
@@ -133,7 +135,7 @@
           var entity_folder = entities[entity];
 
           // Grabbing full path to entity one is going to create
-          var entity_app_path = path.join(process.cwd(),'tests/spec/'+entity_folder);
+          var entity_app_path = path.join(app_path,'tests/spec/'+entity_folder);
 
           // check if same entity exists
           var entity_file = getEntityTestSnippet(entity,isCoffee);
