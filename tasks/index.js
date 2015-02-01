@@ -6,6 +6,7 @@
   mergeTrees = require('broccoli-merge-trees'),
   dist_dir = path.join(__dirname,'../../../'),
   rework = require('broccoli-rework-single'),
+  imprt = require('rework-import'),
   ngApp = require(dist_dir+"/ngconfig.json");
 
   module.exports = {
@@ -47,9 +48,10 @@
     },
     vendorsCss: function(){
       var vendors_css = path.join(dist_dir,'/vendors');
-      return rework(vendors_css,{
-        inputFile: './vendors.css',
-        outputFile: './vendors.css'
+      return rework(vendors_css,'./vendors.css','./vendors.css',{
+        use: function(css) {
+          css.use(imprt());
+        }
       });
     }
   }
