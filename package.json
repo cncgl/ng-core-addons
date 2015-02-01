@@ -13,6 +13,7 @@
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-rework-single": "^1.0.1",
     "broccoli-webpack": "^0.1.1",
+    "broccoli-static-compiler": "^0.2.1",
     "change-case": "^2.2.0",
     "fs-concatenate": "git+https://github.com/thetutlage/fs-concatenate.git",
     "lineup": "0.0.7",
