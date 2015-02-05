@@ -1,6 +1,6 @@
 {
   "name": "ng-core-addons",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "core addon for ngcli , contains generator and all required build tasks.",
   "main": "index.js",
   "scripts": {
@@ -12,14 +12,15 @@
     "broccoli-angular-templates-cache": "^1.0.2",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-rework-single": "^1.0.1",
-    "broccoli-webpack": "^0.1.1",
     "broccoli-static-compiler": "^0.2.1",
+    "broccoli-webpack": "^0.1.1",
     "change-case": "^2.2.0",
     "fs-concatenate": "git+https://github.com/thetutlage/fs-concatenate.git",
-    "rework-import": "^2.0.1",
     "lineup": "0.0.7",
     "lodash": "^2.4.1",
-    "mkdirp": "^0.5.0"
+    "mkdirp": "^0.5.0",
+    "rework-assets": "^1.0.0",
+    "rework-import": "^2.0.1"
   },
   "devDependencies": {
     "ng-runner": "^0.0.1"

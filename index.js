@@ -29,6 +29,10 @@ module.exports = {
     {
       name:'vendorsCss',
       init: tasks.vendorsCss
+    },
+    {
+      name: 'copyIncludes',
+      init: tasks.copyIncludes
     }
   ],
   commands:[

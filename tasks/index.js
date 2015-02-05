@@ -5,6 +5,7 @@
   path = require("path"),
   mergeTrees = require('broccoli-merge-trees'),
   dist_dir = path.join(__dirname,'../../../'),
+  assets = require('rework-assets'),
   rework = require('broccoli-rework-single'),
   imprt = require('rework-import'),
   ngApp = require(dist_dir+"/ngconfig.json");
@@ -51,7 +52,20 @@
       return rework(vendors_css,'./vendors.css','./vendors.css',{
         use: function(css) {
           css.use(imprt());
+          css.use(assets({
+            src: path.join(vendors_css,'../'),
+            dest: path.join(vendors_css,'../includes'),
+            prefix: 'includes/',
+            onError: console.error
+          }))
         }
+      });
+    },
+    copyIncludes: function(){
+      var app_dir = path.join(dist_dir,'/includes');
+      return pickFiles(app_dir,{
+        srcDir: './',
+        destDir: './includes'
       });
     }
   }
