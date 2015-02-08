@@ -32,18 +32,16 @@ and use it later
   }
  */
 
-
-/* @ngInject */
-
 (function() {
   module.exports = {
     provider: "{{name}}",
-    resolve: function($q) {
+    // It is required to do DI manually here until i find a way to fix it
+    resolve: ['$q',function($q) {
       var deferred;
       deferred = $q.defer();
       deferred.resolve("echo {{name}} and then start angular app");
       return deferred.promise;
     }
-  };
+  }];
 
 }).call(this);

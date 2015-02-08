@@ -33,7 +33,9 @@ and use it later
 ### @ngInject ###
 module.exports =
   provider: "{{name}}"
-  resolve: ($q) -> #@ngInject
+  ### It is required to do DI manually here until i find a way to fix it ###
+  resolve: ['$q',($q) -> #@ngInject
     deferred = $q.defer()
     deferred.resolve "echo {{name}} and then start angular app"
     deferred.promise
+  ]
