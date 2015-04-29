@@ -71,18 +71,19 @@
 
       function getEntitySnippet(entity,isCoffee){
         var entitySnippet;
-        entitySnippet = "content/"+entity+"/"+entity;
+        entitySnippet = "content"+path.sep+entity+path.sep+entity;
         if(isCoffee){
           entitySnippet = entitySnippet + ".coffee";
         }else{
           entitySnippet = entitySnippet + ".js";
         }
+        console.log(entitySnippet);
         return snippets[entitySnippet].replace(/{{name}}/g,args.name);
       };
 
       function getEntityTestSnippet(entity,isCoffee){
         var entitySnippet;
-        entitySnippet = "content/"+entity+"/test";
+        entitySnippet = "content"+path.sep+entity+path.sep+"test";
         if(isCoffee){
           entitySnippet = entitySnippet + ".coffee";
         }else{
