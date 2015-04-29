@@ -1,6 +1,6 @@
 {
   "name": "ng-core-addons",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "core addon for ngcli , contains generator and all required build tasks.",
   "main": "index.js",
   "scripts": {
