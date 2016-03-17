@@ -3,9 +3,6 @@
   "version": "0.0.9",
   "description": "core addon for ngcli , contains generator and all required build tasks.",
   "main": "index.js",
-  "scripts": {
-    "postinstall": "node ./node_modules/fs-concatenate -i content -o snippets.js"
-  },
   "license": "ISC",
   "dependencies": {
     "bluebird": "^2.6.2",
